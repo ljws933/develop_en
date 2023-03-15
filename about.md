@@ -5,9 +5,10 @@ menu: true
 order: 10
 ---
 
-## 소개
+## Introduce
 
-다른 사람들이 알려주지 않는 현지인만 알고 있는 정보를 공유하기 위한 목적의 블로그입니다.
-광고를 클릭해주시거나 후원을 해주시면 블로그 작성하는데 큰 힘이 됩니다!! ㅠㅠ
+I'm Junior Android App Developer.
 
-<a href="https://mmol.tistory.com/" target="_blank">티스토리</a>에서 여기로 이사했습니다!
+Thank you for your visiting!
+
+<a href="https://github.com/mmol93" target="_blank">Github: Mmol93</a>
