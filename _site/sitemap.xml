@@ -2,9 +2,9 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
     <url>
-      <loc>https://korean-worker.com/kotlin/2023/01/09/type-of-night-culture/</loc>
+      <loc>https://korean-worker.com/android/2023/03/17/android-mvvm-1/</loc>
       
-        <lastmod>2023-01-09T00:00:00+00:00</lastmod>
+        <lastmod>2023-03-17T00:00:00+00:00</lastmod>
       
 
       
@@ -18,7 +18,215 @@
     </url>
   
     <url>
-      <loc>https://korean-worker.com/flutter/2023/01/08/wireless-charge-buds2/</loc>
+      <loc>https://korean-worker.com/android/2023/03/16/broadcast-test/</loc>
+      
+        <lastmod>2023-03-16T00:00:00+00:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>https://korean-worker.com/kotlin/2023/03/11/kotlin-annotation2/</loc>
+      
+        <lastmod>2023-03-11T00:00:00+00:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>https://korean-worker.com/kotlin/2023/03/09/kotlin-reflection/</loc>
+      
+        <lastmod>2023-03-09T00:00:00+00:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>https://korean-worker.com/kotlin/2023/03/06/kotlin-annotation1/</loc>
+      
+        <lastmod>2023-03-06T00:00:00+00:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>https://korean-worker.com/android/2023/02/28/overlay-lock-screen/</loc>
+      
+        <lastmod>2023-02-28T00:00:00+00:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>https://korean-worker.com/android/2023/02/18/what-workManager/</loc>
+      
+        <lastmod>2023-02-18T00:00:00+00:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>https://korean-worker.com/kotlin/2023/02/18/kotlin-variance/</loc>
+      
+        <lastmod>2023-02-18T00:00:00+00:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>https://korean-worker.com/android/2023/02/17/deprecated-error/</loc>
+      
+        <lastmod>2023-02-17T00:00:00+00:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>https://korean-worker.com/android/2023/02/14/focus-editText/</loc>
+      
+        <lastmod>2023-02-14T00:00:00+00:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>https://korean-worker.com/android/2023/02/04/outOfMemory/</loc>
+      
+        <lastmod>2023-02-04T00:00:00+00:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>https://korean-worker.com/android/2023/01/19/library-jitpack/</loc>
+      
+        <lastmod>2023-01-19T00:00:00+00:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>https://korean-worker.com/android/2023/01/17/notification-permission/</loc>
+      
+        <lastmod>2023-01-17T00:00:00+00:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>https://korean-worker.com/kotlin/2023/01/16/kotlin-scope-function/</loc>
+      
+        <lastmod>2023-01-16T00:00:00+00:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>https://korean-worker.com/kotlin/2023/01/08/repeat-variable/</loc>
       
         <lastmod>2023-01-08T00:00:00+00:00</lastmod>
       
@@ -34,7 +242,7 @@
     </url>
   
     <url>
-      <loc>https://korean-worker.com/algorithm/2023/01/07/chat-gpt/</loc>
+      <loc>https://korean-worker.com/android/2023/01/07/registerForActivity/</loc>
       
         <lastmod>2023-01-07T00:00:00+00:00</lastmod>
       
@@ -50,9 +258,9 @@
     </url>
   
     <url>
-      <loc>https://korean-worker.com/android/2023/01/03/yomiuri/</loc>
+      <loc>https://korean-worker.com/kotlin/2023/01/07/inline/</loc>
       
-        <lastmod>2023-01-03T00:00:00+00:00</lastmod>
+        <lastmod>2023-01-07T00:00:00+00:00</lastmod>
       
 
       
@@ -82,9 +290,57 @@
     </url>
   
     <url>
-      <loc>https://korean-worker.com/android/2022/12/24/kusatsu/</loc>
+      <loc>https://korean-worker.com/android/2022/12/24/fragment_navigation/</loc>
       
         <lastmod>2022-12-24T00:00:00+00:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>https://korean-worker.com/android/2022/12/22/license-tool-plugin/</loc>
+      
+        <lastmod>2022-12-22T00:00:00+00:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>https://korean-worker.com/android/2022/12/19/android-solid/</loc>
+      
+        <lastmod>2022-12-19T00:00:00+00:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>1.0</priority>
+      
+
+    </url>
+  
+    <url>
+      <loc>https://korean-worker.com/android/2022/12/18/firebase-debugview/</loc>
+      
+        <lastmod>2022-12-18T00:00:00+00:00</lastmod>
       
 
       
