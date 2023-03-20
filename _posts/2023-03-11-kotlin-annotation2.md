@@ -11,9 +11,7 @@ description: There are two ways to customize annotations in Kotlin using reflect
 ### **Summary of frequently used annotations in Kotlin-2**
 In this post, we will learn how to customize annotations following the previous post.
 
-[Summary of frequently used annotations in Kotlin-1
-Learn about frequently used annotations in Kotlin Annotations are a means of adding metadata (additional features) to code non-intrusively. Kotlin has various types of annotations. Kotlin에 대한 자주 사
-android-developer.tistory.com](https://android-developer.tistory.com/entry/%EC%BD%94%ED%8B%80%EB%A6%B0%EC%97%90%EC%84%9C-%EC%9E%90%EC%A3%BC-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94-%EC%96%B4%EB%85%B8%ED%85%8C%EC%9D%B4%EC%85%98Annotation-%EC%A0%95%EB%A6%AC-1)
+{% linkpreview "https://mmol93-developer.com/kotlin/2023/03/06/kotlin-annotation1/" %}
 
 ---
 
@@ -35,9 +33,7 @@ To use Reflection in Kotlin, you need to use KClass.
 
 You can find information about **Kotlin Reflection** here.
 
-[Android Kotlin Reflection Basic Definition
-In Kotlin, Reflection is a technique used to examine the classes of programs at runtime. In other words, you can understand the internal structure of an object through instances, etc., while the program is running. 대
-android-developer.tistory.com](https://android-developer.tistory.com/entry/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%ED%8A%B8-%EC%BD%94%ED%8B%80%EB%A6%B0-Reflection%EB%A6%AC%ED%94%8C%EB%A0%89%EC%85%98-%EA%B8%B0%EC%B4%88)
+{% linkpreview "https://mmol93-developer.com/kotlin/2023/03/09/kotlin-reflection/" %}
 
 To use KClass in Kotlin, you need to add the following library:
 
