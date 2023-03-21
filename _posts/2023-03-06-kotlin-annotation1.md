@@ -1,6 +1,6 @@
 ---  
 layout: post  
-title: "What is annotation in kotlin? custom annotation, built in annotation - 2"  
+title: "What is annotation in kotlin? custom annotation, built in annotation - 1"  
 categories: kotlin
 tags: kotlin
 comments: true
