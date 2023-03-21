@@ -4,11 +4,79 @@
     <title>Mmol93 Developer</title>
     <description>Software is for automation.
 </description>
-    <link>https://korean-worker.com/</link>
-    <atom:link href="https://korean-worker.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 20 Mar 2023 23:57:35 +0000</pubDate>
-    <lastBuildDate>Mon, 20 Mar 2023 23:57:35 +0000</lastBuildDate>
+    <link>https://mmol93-developer.com/</link>
+    <atom:link href="https://mmol93-developer.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 21 Mar 2023 00:11:39 +0000</pubDate>
+    <lastBuildDate>Tue, 21 Mar 2023 00:11:39 +0000</lastBuildDate>
     <generator>Jekyll v3.9.3</generator>
+    
+      <item>
+        <title>What is an essential AAC for using Android MVVM?</title>
+        <description>&lt;p&gt;AAC is a library collection that was created to simplify and improve the use of MVVM architecture. It is not an architecture itself, but rather a tool for using MVVM more efficiently and accurately. The blog post linked below explains what MVVM is and its background.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://mmol93-developer.com/android/2023/03/17/android-mvvm/&quot;&gt;What is Android MVVM architecture?&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Android Architecture Components (AAC) is a library created to further simplify and improve the use of MVVM. Jetpack is commonly associated with AAC. The structure of AAC is briefly explained below.&lt;/p&gt;
+
+&lt;h3 id=&quot;view&quot;&gt;View&lt;/h3&gt;
+
+&lt;p&gt;The View interacts with the user and displays the UI.&lt;/p&gt;
+
+&lt;h3 id=&quot;viewmodel&quot;&gt;ViewModel&lt;/h3&gt;
+
+&lt;p&gt;The ViewModel receives data from the Repository and transforms it into the appropriate format for the UI.&lt;/p&gt;
+
+&lt;h3 id=&quot;livedata&quot;&gt;LiveData&lt;/h3&gt;
+
+&lt;p&gt;LiveData detects the lifecycle of the View and updates the corresponding data.&lt;/p&gt;
+
+&lt;h3 id=&quot;repository&quot;&gt;Repository&lt;/h3&gt;
+
+&lt;p&gt;The Repository retrieves data from the local database (Room).&lt;/p&gt;
+
+&lt;h3 id=&quot;room&quot;&gt;Room&lt;/h3&gt;
+
+&lt;p&gt;Room is an AAC that is used to create a local database.&lt;/p&gt;
+
+&lt;p&gt;The official AAC library released by Google in 2017 consists of the following:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Lifecycles (Easy handling lifecycles)&lt;/li&gt;
+  &lt;li&gt;LiveData (Lifecycle aware observable)&lt;/li&gt;
+  &lt;li&gt;ViewModel (Managing data in a lifecycle)&lt;/li&gt;
+  &lt;li&gt;Room (Object mapping for SQLite)&lt;/li&gt;
+  &lt;li&gt;Paging (Gradually loading information)&lt;/li&gt;
+  &lt;li&gt;Data binding Navigation WorkManager&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Each of the libraries has its own characteristics.&lt;/p&gt;
+
+&lt;h3 id=&quot;lifecycles&quot;&gt;Lifecycles&lt;/h3&gt;
+
+&lt;p&gt;Lifecycles manage the lifecycle of each UI. It consists of two types: Lifecycle Owner and Lifecycle Observer.&lt;/p&gt;
+
+&lt;h3 id=&quot;livedata-1&quot;&gt;LiveData&lt;/h3&gt;
+
+&lt;p&gt;LiveData is used as an observable pattern and manages data according to the Android Lifecycle. It automatically manages activity-related processing according to the lifecycle of Activity or Fragment.&lt;/p&gt;
+
+&lt;h3 id=&quot;viewmodel-1&quot;&gt;ViewModel&lt;/h3&gt;
+
+&lt;p&gt;ViewModel is designed to store and manage UI-related data considering the lifecycle. It preserves data even when the configuration changes occur.&lt;/p&gt;
+
+&lt;h3 id=&quot;room-1&quot;&gt;Room&lt;/h3&gt;
+
+&lt;p&gt;Room is a SQLite object mapping library that allows you to easily convert SQLite table data into Java objects.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 21 Mar 2023 00:00:00 +0000</pubDate>
+        <link>https://mmol93-developer.com/android/2023/03/21/android-aac/</link>
+        <guid isPermaLink="true">https://mmol93-developer.com/android/2023/03/21/android-aac/</guid>
+        
+        <category>android</category>
+        
+        
+        <category>android</category>
+        
+      </item>
     
       <item>
         <title>what is Android MVVM architecture and why it is needed?</title>
@@ -160,8 +228,8 @@
 &lt;p&gt;&lt;img src=&quot;https://blog.kakaocdn.net/dn/bVQMXo/btr4hzx850y/3kUMOV06RW2zzuK9MXae8k/img.png&quot; alt=&quot;https://blog.kakaocdn.net/dn/bVQMXo/btr4hzx850y/3kUMOV06RW2zzuK9MXae8k/img.png&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Fri, 17 Mar 2023 00:00:00 +0000</pubDate>
-        <link>https://korean-worker.com/android/2023/03/17/android-mvvm/</link>
-        <guid isPermaLink="true">https://korean-worker.com/android/2023/03/17/android-mvvm/</guid>
+        <link>https://mmol93-developer.com/android/2023/03/17/android-mvvm/</link>
+        <guid isPermaLink="true">https://mmol93-developer.com/android/2023/03/17/android-mvvm/</guid>
         
         <category>android</category>
         
@@ -281,8 +349,8 @@
 &lt;p&gt;You can test &lt;strong&gt;“android.intent.action.BOOT_COMPLETED”&lt;/strong&gt; with &lt;strong&gt;AndroidJUnit4&lt;/strong&gt;.&lt;/p&gt;
 </description>
         <pubDate>Thu, 16 Mar 2023 00:00:00 +0000</pubDate>
-        <link>https://korean-worker.com/android/2023/03/16/broadcast-test/</link>
-        <guid isPermaLink="true">https://korean-worker.com/android/2023/03/16/broadcast-test/</guid>
+        <link>https://mmol93-developer.com/android/2023/03/16/broadcast-test/</link>
+        <guid isPermaLink="true">https://mmol93-developer.com/android/2023/03/16/broadcast-test/</guid>
         
         <category>android</category>
         
@@ -515,8 +583,8 @@
 &lt;/blockquote&gt;
 </description>
         <pubDate>Sat, 11 Mar 2023 00:00:00 +0000</pubDate>
-        <link>https://korean-worker.com/kotlin/2023/03/11/kotlin-annotation2/</link>
-        <guid isPermaLink="true">https://korean-worker.com/kotlin/2023/03/11/kotlin-annotation2/</guid>
+        <link>https://mmol93-developer.com/kotlin/2023/03/11/kotlin-annotation2/</link>
+        <guid isPermaLink="true">https://mmol93-developer.com/kotlin/2023/03/11/kotlin-annotation2/</guid>
         
         <category>kotlin</category>
         
@@ -872,8 +940,8 @@
 &lt;p&gt;However, if you use it excessively, you may cause &lt;strong&gt;performance degradation&lt;/strong&gt; because you have to inspect it every time you call a function or create an object.&lt;/p&gt;
 </description>
         <pubDate>Thu, 09 Mar 2023 00:00:00 +0000</pubDate>
-        <link>https://korean-worker.com/kotlin/2023/03/09/kotlin-reflection/</link>
-        <guid isPermaLink="true">https://korean-worker.com/kotlin/2023/03/09/kotlin-reflection/</guid>
+        <link>https://mmol93-developer.com/kotlin/2023/03/09/kotlin-reflection/</link>
+        <guid isPermaLink="true">https://mmol93-developer.com/kotlin/2023/03/09/kotlin-reflection/</guid>
         
         <category>kotlin</category>
         
@@ -1249,8 +1317,8 @@ fun sum(a: Int, b: Int) = a + b
 &lt;/ul&gt;
 </description>
         <pubDate>Mon, 06 Mar 2023 00:00:00 +0000</pubDate>
-        <link>https://korean-worker.com/kotlin/2023/03/06/kotlin-annotation1/</link>
-        <guid isPermaLink="true">https://korean-worker.com/kotlin/2023/03/06/kotlin-annotation1/</guid>
+        <link>https://mmol93-developer.com/kotlin/2023/03/06/kotlin-annotation1/</link>
+        <guid isPermaLink="true">https://mmol93-developer.com/kotlin/2023/03/06/kotlin-annotation1/</guid>
         
         <category>kotlin</category>
         
@@ -1331,8 +1399,8 @@ fun sum(a: Int, b: Int) = a + b
 
 </description>
         <pubDate>Tue, 28 Feb 2023 00:00:00 +0000</pubDate>
-        <link>https://korean-worker.com/android/2023/02/28/overlay-lock-screen/</link>
-        <guid isPermaLink="true">https://korean-worker.com/android/2023/02/28/overlay-lock-screen/</guid>
+        <link>https://mmol93-developer.com/android/2023/02/28/overlay-lock-screen/</link>
+        <guid isPermaLink="true">https://mmol93-developer.com/android/2023/02/28/overlay-lock-screen/</guid>
         
         <category>android</category>
         
@@ -1588,8 +1656,8 @@ fun sum(a: Int, b: Int) = a + b
 &lt;/ul&gt;
 </description>
         <pubDate>Sat, 18 Feb 2023 00:00:00 +0000</pubDate>
-        <link>https://korean-worker.com/android/2023/02/18/what-workManager/</link>
-        <guid isPermaLink="true">https://korean-worker.com/android/2023/02/18/what-workManager/</guid>
+        <link>https://mmol93-developer.com/android/2023/02/18/what-workManager/</link>
+        <guid isPermaLink="true">https://mmol93-developer.com/android/2023/02/18/what-workManager/</guid>
         
         <category>android</category>
         
@@ -1752,8 +1820,8 @@ fun sum(a: Int, b: Int) = a + b
 &lt;p&gt;&lt;img src=&quot;https://blog.kakaocdn.net/dn/Tk18r/btrZJDyj6XZ/RKnDddleJ8JAMpKR0Coswk/img.png&quot; alt=&quot;https://blog.kakaocdn.net/dn/Tk18r/btrZJDyj6XZ/RKnDddleJ8JAMpKR0Coswk/img.png&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Sat, 18 Feb 2023 00:00:00 +0000</pubDate>
-        <link>https://korean-worker.com/kotlin/2023/02/18/kotlin-variance/</link>
-        <guid isPermaLink="true">https://korean-worker.com/kotlin/2023/02/18/kotlin-variance/</guid>
+        <link>https://mmol93-developer.com/kotlin/2023/02/18/kotlin-variance/</link>
+        <guid isPermaLink="true">https://mmol93-developer.com/kotlin/2023/02/18/kotlin-variance/</guid>
         
         <category>kotlin</category>
         
@@ -1806,8 +1874,8 @@ fun sum(a: Int, b: Int) = a + b
 &lt;p&gt;You can see that it works normally.&lt;/p&gt;
 </description>
         <pubDate>Fri, 17 Feb 2023 00:00:00 +0000</pubDate>
-        <link>https://korean-worker.com/android/2023/02/17/deprecated-error/</link>
-        <guid isPermaLink="true">https://korean-worker.com/android/2023/02/17/deprecated-error/</guid>
+        <link>https://mmol93-developer.com/android/2023/02/17/deprecated-error/</link>
+        <guid isPermaLink="true">https://mmol93-developer.com/android/2023/02/17/deprecated-error/</guid>
         
         <category>android</category>
         
@@ -1878,8 +1946,8 @@ fun sum(a: Int, b: Int) = a + b
 &lt;p&gt;Therefore, you can prevent the keyboard from automatically appearing.&lt;/p&gt;
 </description>
         <pubDate>Tue, 14 Feb 2023 00:00:00 +0000</pubDate>
-        <link>https://korean-worker.com/android/2023/02/14/focus-editText/</link>
-        <guid isPermaLink="true">https://korean-worker.com/android/2023/02/14/focus-editText/</guid>
+        <link>https://mmol93-developer.com/android/2023/02/14/focus-editText/</link>
+        <guid isPermaLink="true">https://mmol93-developer.com/android/2023/02/14/focus-editText/</guid>
         
         <category>android</category>
         
@@ -1938,8 +2006,8 @@ fun sum(a: Int, b: Int) = a + b
 &lt;p&gt;After this, run the project again to confirm that it is working properly.&lt;/p&gt;
 </description>
         <pubDate>Sat, 04 Feb 2023 00:00:00 +0000</pubDate>
-        <link>https://korean-worker.com/android/2023/02/04/outOfMemory/</link>
-        <guid isPermaLink="true">https://korean-worker.com/android/2023/02/04/outOfMemory/</guid>
+        <link>https://mmol93-developer.com/android/2023/02/04/outOfMemory/</link>
+        <guid isPermaLink="true">https://mmol93-developer.com/android/2023/02/04/outOfMemory/</guid>
         
         <category>android</category>
         
@@ -2180,8 +2248,8 @@ fun sum(a: Int, b: Int) = a + b
 &lt;p&gt;And you can add &lt;strong&gt;dependency&lt;/strong&gt; that you just created.&lt;/p&gt;
 </description>
         <pubDate>Thu, 19 Jan 2023 00:00:00 +0000</pubDate>
-        <link>https://korean-worker.com/android/2023/01/19/library-jitpack/</link>
-        <guid isPermaLink="true">https://korean-worker.com/android/2023/01/19/library-jitpack/</guid>
+        <link>https://mmol93-developer.com/android/2023/01/19/library-jitpack/</link>
+        <guid isPermaLink="true">https://mmol93-developer.com/android/2023/01/19/library-jitpack/</guid>
         
         <category>android</category>
         
@@ -2404,8 +2472,8 @@ fun sum(a: Int, b: Int) = a + b
 &lt;/ul&gt;
 </description>
         <pubDate>Tue, 17 Jan 2023 00:00:00 +0000</pubDate>
-        <link>https://korean-worker.com/android/2023/01/17/notification-permission/</link>
-        <guid isPermaLink="true">https://korean-worker.com/android/2023/01/17/notification-permission/</guid>
+        <link>https://mmol93-developer.com/android/2023/01/17/notification-permission/</link>
+        <guid isPermaLink="true">https://mmol93-developer.com/android/2023/01/17/notification-permission/</guid>
         
         <category>android</category>
         
@@ -2673,8 +2741,8 @@ inline fun &amp;lt;T, R&amp;gt; T.run(block: T.() -&amp;gt; R): R {
 
 </description>
         <pubDate>Mon, 16 Jan 2023 00:00:00 +0000</pubDate>
-        <link>https://korean-worker.com/kotlin/2023/01/16/kotlin-scope-function/</link>
-        <guid isPermaLink="true">https://korean-worker.com/kotlin/2023/01/16/kotlin-scope-function/</guid>
+        <link>https://mmol93-developer.com/kotlin/2023/01/16/kotlin-scope-function/</link>
+        <guid isPermaLink="true">https://mmol93-developer.com/kotlin/2023/01/16/kotlin-scope-function/</guid>
         
         <category>kotlin</category>
         
@@ -2743,8 +2811,8 @@ inline fun &amp;lt;T, R&amp;gt; T.run(block: T.() -&amp;gt; R): R {
 &lt;p&gt;you need to check whether you need to call it every time you click the button.&lt;/p&gt;
 </description>
         <pubDate>Sun, 08 Jan 2023 00:00:00 +0000</pubDate>
-        <link>https://korean-worker.com/kotlin/2023/01/08/repeat-variable/</link>
-        <guid isPermaLink="true">https://korean-worker.com/kotlin/2023/01/08/repeat-variable/</guid>
+        <link>https://mmol93-developer.com/kotlin/2023/01/08/repeat-variable/</link>
+        <guid isPermaLink="true">https://mmol93-developer.com/kotlin/2023/01/08/repeat-variable/</guid>
         
         <category>kotlin</category>
         
@@ -2942,8 +3010,8 @@ inline fun &amp;lt;T, R&amp;gt; T.run(block: T.() -&amp;gt; R): R {
 &lt;/ol&gt;
 </description>
         <pubDate>Sat, 07 Jan 2023 00:00:00 +0000</pubDate>
-        <link>https://korean-worker.com/android/2023/01/07/registerForActivity/</link>
-        <guid isPermaLink="true">https://korean-worker.com/android/2023/01/07/registerForActivity/</guid>
+        <link>https://mmol93-developer.com/android/2023/01/07/registerForActivity/</link>
+        <guid isPermaLink="true">https://mmol93-developer.com/android/2023/01/07/registerForActivity/</guid>
         
         <category>android</category>
         
@@ -3196,8 +3264,8 @@ inline fun &amp;lt;T, R&amp;gt; T.run(block: T.() -&amp;gt; R): R {
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </description>
         <pubDate>Sat, 07 Jan 2023 00:00:00 +0000</pubDate>
-        <link>https://korean-worker.com/kotlin/2023/01/07/inline/</link>
-        <guid isPermaLink="true">https://korean-worker.com/kotlin/2023/01/07/inline/</guid>
+        <link>https://mmol93-developer.com/kotlin/2023/01/07/inline/</link>
+        <guid isPermaLink="true">https://mmol93-developer.com/kotlin/2023/01/07/inline/</guid>
         
         <category>kotlin</category>
         
@@ -3361,8 +3429,8 @@ inline fun &amp;lt;T, R&amp;gt; T.run(block: T.() -&amp;gt; R): R {
 &lt;/ul&gt;
 </description>
         <pubDate>Sat, 24 Dec 2022 00:00:00 +0000</pubDate>
-        <link>https://korean-worker.com/android/2022/12/24/fragment_navigation/</link>
-        <guid isPermaLink="true">https://korean-worker.com/android/2022/12/24/fragment_navigation/</guid>
+        <link>https://mmol93-developer.com/android/2022/12/24/fragment_navigation/</link>
+        <guid isPermaLink="true">https://mmol93-developer.com/android/2022/12/24/fragment_navigation/</guid>
         
         <category>android</category>
         
@@ -3524,8 +3592,8 @@ apply plugin: &quot;com.cookpad.android.plugin.license-tools&quot;
 &lt;p&gt;&lt;img src=&quot;https://blog.kakaocdn.net/dn/tjzDe/btrUh4a00sw/DtTE0fjTu8wuku5z1YnGyk/img.jpg&quot; width=&quot;450&quot; alt=&quot;LicenseToolsPlugin&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 22 Dec 2022 00:00:00 +0000</pubDate>
-        <link>https://korean-worker.com/android/2022/12/22/license-tool-plugin/</link>
-        <guid isPermaLink="true">https://korean-worker.com/android/2022/12/22/license-tool-plugin/</guid>
+        <link>https://mmol93-developer.com/android/2022/12/22/license-tool-plugin/</link>
+        <guid isPermaLink="true">https://mmol93-developer.com/android/2022/12/22/license-tool-plugin/</guid>
         
         <category>android</category>
         
@@ -3986,8 +4054,8 @@ You can remove dependencies in the following ways and have Notification Service 
 &lt;/ul&gt;
 </description>
         <pubDate>Mon, 19 Dec 2022 00:00:00 +0000</pubDate>
-        <link>https://korean-worker.com/android/2022/12/19/android-solid/</link>
-        <guid isPermaLink="true">https://korean-worker.com/android/2022/12/19/android-solid/</guid>
+        <link>https://mmol93-developer.com/android/2022/12/19/android-solid/</link>
+        <guid isPermaLink="true">https://mmol93-developer.com/android/2022/12/19/android-solid/</guid>
         
         <category>android</category>
         
@@ -4142,8 +4210,8 @@ It is an app with a layout structure that has Main Activity and a fragment calle
 &lt;/ul&gt;
 </description>
         <pubDate>Sun, 18 Dec 2022 00:00:00 +0000</pubDate>
-        <link>https://korean-worker.com/android/2022/12/18/firebase-debugview/</link>
-        <guid isPermaLink="true">https://korean-worker.com/android/2022/12/18/firebase-debugview/</guid>
+        <link>https://mmol93-developer.com/android/2022/12/18/firebase-debugview/</link>
+        <guid isPermaLink="true">https://mmol93-developer.com/android/2022/12/18/firebase-debugview/</guid>
         
         <category>android</category>
         
