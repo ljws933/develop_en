@@ -9,37 +9,34 @@ description: There are two ways to test a Broadcast Receiver 1. Sending a signal
 ---
 
 ### **Testing Android Broadcast Receiver**
-
 There are two ways to test a Broadcast Receiver:
-1. Sending a signal directly to the Broadcast Receiver using ADB.
-2. Using Instrumented Unit Test to test on an emulator.
+1. Sending signals directly to the Broadcast Receiver using ADB
+2. Using Instrumented Unit Test to test on an emulator
 
-Let's take a look at how to use them and their pros and cons.
+Both methods have their pros and cons, let's take a look at how to use them.
 
 ---
 
-## **Testing Android Broadcast Receiver using ADB**
+## **Testing Android Broadcast Receiver with ADB**
 
-First, to test it using ADB, you need to create a test environment as follows:
+To test with ADB, you need to create a test environment as follows:
 
-1. Connect your Android device to your computer.
-2. Verify that the device is connected using ADB.
-    - Enter the command "adb devices" and check if the connected device is displayed.
-3. Open the ADB shell to send a broadcast event.
-    - Enter the command "adb shell".
+1. Connect the Android device to your computer.
+2. Use ADB to ensure that the device is connected.
+    - Enter the `adb devices` command and check if the connected device is displayed.
+3. Open the ADB shell to send broadcast events.
+    - Enter the `adb shell` command.
 4. Send a broadcast event.
-    - Use the "am broadcast" command to generate a broadcast intent.
-    - For example, enter "am broadcast -a android.intent.action.BOOT_COMPLETED" to simulate a boot completed event.
-5. Verify that the event has been received.
-    - You can verify that the broadcast has been sent by running an app that checks for broadcast reception.
-    - For example, to check for a boot completed event, restart your device, log in, and run the app to verify the event.
+    - Use the `am broadcast` command to generate a broadcast intent.
+    - For example, you can simulate a boot complete event by entering the `am broadcast -a android.intent.action.BOOT_COMPLETED` command.
+5. Verify event reception.
+    - Run an app that checks broadcast reception to confirm that the event has been sent.
+    - For example, to confirm the boot complete event, restart the device, log in, and run the app.
 
 
-### **Modifying AndroidManifest**
+### **Modifying androidManifest**
 
-You need to register the <receiver> in AndroidManifest as follows:
-
-Set exported to **true** so that you can receive broadcasts from outside.
+Register `<receiver>` in the androidManifest and set `exported` to `true`.
 
 ``` kotlin
 <receiver
@@ -52,52 +49,96 @@ Set exported to **true** so that you can receive broadcasts from outside.
 
 ```
 
-### **Notes**
+You also need to define a receiver filter for testing.
 
-System commands such as **android.intent.action.BOOT_COMPLETED** cannot be called from outside on **Android 26 (Oreo)** or later.
+You can define it as follows:
 
-Therefore, you can only test it with a custom action or by specifying a package and class name, as shown below.
+``` kotlin
+<receiver
+    android:name=".broadcast.MyReceiver"
+    android:exported="true">
+    <intent-filter>
+
+        <action android:name="com.my.packageName" />
+
+    </intent-filter>
+
+```
+
+### **Note**
+
+System commands like `android.intent.action.BOOT_COMPLETED` cannot be called from external sources on Android 26 (Oreo) or later.
+
+Therefore, you can only test by custom actions or by specifying the package and class name, as follows:
 
 ```
 adb shell am broadcast -n your.package.name/your.package.name.braodcastClassName -e ACTION_BUTTON "action1"
 
 ```
 
-**Note:**
+Note that:
 
-- **n** is the package name/broadcast class name.
-- **e** is the data to be sent together. (For example, here, "action1" is included in the name ACTION_BUTTON.)
+- `n` is the package name/broadcast class name.
+- `e` is the accompanying data. (In this case, the action name is "ACTION_BUTTON" and the value is "action1".)
 
 ---
 
 ## **Testing with AndroidJUnit4**
 
-Create a file in the androidTest package and enter the following to easily test it.
+Before testing Broadcast Receiver, please make sure that you have defined the filter in androidManifest as mentioned above.
+
+Create a file in the androidTest package, and you can easily test it as follows:
 
 ``` kotlin
-import android.content.Context
-import android.content.Intent
-import androidx.test.core.app.ApplicationProvider
-import androidx.test.ext.junit.runners.AndroidJUnit4
-import androidx.test.platform.app.InstrumentationRegistry
-import org.junit.Assert.assertEquals
-import org.junit.Test
-import org.junit.runner.RunWith
-
 @RunWith(AndroidJUnit4::class)
-class MyBroadcastReceiverInstrumentedTest {
+class AlarmBroadCastTest {
+    private val context = InstrumentationRegistry.getInstrumentation().context
+    private lateinit var receiver: AlarmReceiver
+
+    @Before
+    fun setup() {
+        receiver = AlarmReceiver()
+        val intentFilter = IntentFilter().apply {
+            addAction(context.packageName)
+        }
+        // Register BroadcastReceiver
+        InstrumentationRegistry.getInstrumentation().targetContext.registerReceiver(
+            receiver,
+            intentFilter
+        )
+    }
 
     @Test
-    fun testOnReceive() {
-        val context = InstrumentationRegistry.getInstrumentation().context
-        val intent = Intent("android.intent.action.BOOT_COMPLETED")
-        val receiver = MyBroadcastReceiver()
-        receiver.onReceive(context, intent)
-        // Add verification code
-        assertEquals("android.intent.action.BOOT_COMPLETED", intent.action)
+    fun test_MY_PACKAGE_REPLACED_OnReceive() {
+        val intent = Intent(context.packageName)
+        // Send signal to BroadcastReceiver
+        context.sendOrderedBroadcast(intent, null)
+        // Wait for onReceive() in Receive class
+        Thread.sleep(2000)
+        // Check if the variable in the receiver is set to true
+        assertTrue(receiver.broadcastCalled)
+    }
+
+    @After
+    fun tearDown() {
+        // Unregister BroadcastReceiver
+        InstrumentationRegistry.getInstrumentation().targetContext.unregisterReceiver(receiver)
     }
 }
 
 ```
 
-You can test **"android.intent.action.BOOT_COMPLETED"** with **AndroidJUnit4**.
+Note that the receiver is defined as follows:
+
+``` kotlin
+override fun onReceive(context: Context?, intent: Intent?) {
+    println("Broadcast is called")
+
+    // broadcastCalled is initially false.
+    // It will be set to true only when onReceiver is called.
+    broadcastCalled = true
+}
+
+```
+
+You can check the `broadcastCalled` variable to see if the Broadcast Receiver has been called.
